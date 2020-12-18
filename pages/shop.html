@@ -1,0 +1,216 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head>
+		
+		<title>Yellow Box Beer</title>
+		
+		 <meta charset="utf-8">
+		 
+		
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <script src="../java/main.js"></script>
+	
+	
+
+  <link rel="stylesheet" href="../style/style.css">
+  
+  
+
+
+</head>
+
+<body>
+
+	<div class="row" id="header">
+	<div class="col-sm-4"></div>
+		<nav class="col-sm-8">
+			<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="contactUs.html">Contact us</a></li>
+			<img src="../img/rect839.png" alt="YBB logo" id="logo">
+			<li><a href="shop.html">Shop</a></li>
+			<li><a href="Blog.html">Blog</a></li>
+			</ul>
+			
+		</nav>
+		
+		
+	</div>
+	
+	
+<div id="basket" class="dropdown">
+	<span id="cart" class="glyphicon glyphicon-shopping-cart"></span>
+		  <div class="dropdown-content">
+			<table class="Basket" id="cartList">
+				<tr>
+					<th>Size</th>
+					<th>Price</th>	
+				</tr>
+			</table><br>
+			<p>Total:€<span>0</span></p>
+			
+			<button id="payNow" onclick="paynow()">Pay Now</button>
+		
+		  </div>
+</div>
+
+	<div class="row" >
+		<div class="col-sm-2">
+			<h1>Bottles</h1>
+		</div>
+		</div>
+		
+
+
+	
+	
+	<div class="row" id="lager"  >	
+			<div class="col-sm-3" id="left">
+				<div class="innerBox">
+					<h1>Box Breaker!</h1>
+					<img src="../img/BoxBreaker.png" alt="boxbreaker" class="beer">
+					<p>Hoppy pale ale with hits of chocolate<br>330ml<br>€2.65 a bottle.</p>
+					<button type="button" onclick="beerOne()">
+								Add to basket</button>
+				</div>
+			</div>
+			
+			<div class="col-sm-3" id="midLeft">
+				<div class="innerBox">
+					<h1>Box off!</h1>
+					<img src="../img/KnockOff.png" alt="knockoff" class="beer">
+					<p>None of the alcohol and all of the taste!<br>330ml<br>€1.65. a can.</p>
+					<button type="button" onclick="beerTwo()">Add to basket</button>
+				</div>
+			</div>
+				
+			<div class="col-sm-3" id="midRight" >
+				<div class="innerBox">
+					<h1>Yellow Noise!</h1>
+					<img src="../img/YellowNoise.png" alt="yellow noise" class="beer">
+					<p>A deep rich stout with nutty notes <br>330ml<br>€2.85 a can.</p>
+					<button type="button" onclick="beerThree()" >Add to basket</button>
+				</div>
+			</div>
+			
+				
+			<div class="col-sm-3" >
+				<div class="innerBox">
+					<h1>Around The Lines!</h1>
+					<img src="../img/AroundTheLines.png" alt="surround" class="beer">
+					<p>A liht refreshing lager with hits of orange and lime<br>330ml<br>€2.25 a can.</p>
+					<button type="button" onclick="beerFour()">Add to basket</button>
+				</div>
+			</div>
+		</div>	
+			
+<div class="row" id="heading">
+	<div class="col-sm-2">
+		<h1>Six Packs</h1>
+	</div>
+</div>
+	
+	<div class="row" id="IPA">	
+			<div class="col-sm-3" >
+				<div class="innerBox">
+					<h1>Six Box Breaker!</h1>
+					<img src="../img/breakerSix.png" alt="6beers" class="beer">
+					<p>A six back of Box Breaker, to share or just treat yourself!<br>Six cans<br>€14.99 a pack.</p>
+					<button type="button" onclick="packOne()" >Add to basket</button>
+				</div>
+			</div>
+			
+			<div class="col-sm-3" >
+				<div class="innerBox">
+					<h1>Six Knock Off</h1>
+					<img src="../img/boxOffSix.png" alt="sixcans" class="beer">
+					<p>Six NA beers, for when you just cant get enough!<br>Six cans<br>€8.99 a pack.</p>
+					<button type="button" onclick="packTwo()">Add to basket</button>
+				</div>
+			</div>
+				
+			<div class="col-sm-3" >
+				<div class="innerBox">
+					<h1>Six Yellow Noise</h1>
+					<img src="../img/YellowNoiseSix.png" alt="sixyellownoise" class="beer">
+					<p>Why stop at one?<br>Six cans<br>€16.99 a pack.</p>
+					<button type="button" onclick="packThree()">Add to basket</button>
+				</div>
+			</div>
+			
+				
+			<div class="col-sm-3" >
+				<div class="innerBox">
+					<h1>Six Around the lines</h1>
+					<img src="../img/AroundTheLinesSix.png" alt="sixcans" class="beer">
+					<p>Go on, you deserve it!<br>Six cans<br>€12.99 a pack</p>
+					<button type="button" onclick="packFour()">Add to basket</button>
+				</div>
+			</div>
+		</div>
+	
+
+	<div class="row" id="heading">
+		<div class="col-sm-2" >
+			<h1>I.P.A.</h1>
+		</div>
+	</div>
+	
+	<div class="row" id="IPA">	
+	
+		<div class="col-sm-3">
+			<div class="innerBox">
+				<h1>Gift Box</h1>
+				<img src="../img/SixGift.png" alt="beer gift" class="beer">
+				<p>Treat the ones you love!<br>6 bottles<br>€12.99.</p>
+				<button  type="button" onclick="boxOne()">Add to basket</button>
+			</div>
+		</div>
+			
+		<div class="col-sm-3">
+			<div class="innerBox">
+				<h1>Big Gift Box</h1>
+				<img src="../img/TwelveGift.png" alt="12 beer gift" class="beer">
+				<p>Treat the ones you REALLY love!<br>12 bottles<br>€19.99.</p>
+				<button  type="button" onclick="boxTwo()">Add to basket</button>
+			</div>
+		</div>
+		
+		
+				
+		<div class="col-sm-3">
+			<div class="innerBox">
+				<h1>HUGE Gift Box</h1>
+				<img src="../img/EighteenGift.png" alt="18 beer gift" class="beer">
+				<p>Nothing says "I love you" like beer!<br>18 bottle<br>€29.99.</p>
+				<button type="button" onclick="boxThree()">Add to basket</button>
+			</div>
+		</div>
+			
+		<div class="col-sm-3" >
+			<div class="innerBox">
+				<h1>Mega Gift Box</h1>
+				<img src="../img/MegaGift.png" alt="mega gift" class="beer">
+				<p>Now this one you just have to share!<br>24 bottles<br>€34.99.</p>
+				<button type="button" onclick="boxFour()">Add to basket</button>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">	
+				<!-- href should link to company's social media addresses when they exist-->
+				<a href="https://www.facebook.com" class="footer"><img src="../img/facebook_yellowboxbeer.png" alt="facebook logo"/></a>
+				<a href="https://www.instagram.com" class="footer"><img src="../img/instagram_yellowboxbeer.png" alt="instagram logo"/></a>			
+				<h4 class="footer"> ✆ +353 89 666 3333 </h4> <br> <br>
+				<h4 class="footer"> ✉ info@yellowboxbeer.com </h4>
+				<h5 class="footer">Copyright © Yellow Box Beer</h5>
+			</div>
+	
+	</body>
+
+
+</html>

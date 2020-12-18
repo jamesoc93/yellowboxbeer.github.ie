@@ -1,0 +1,101 @@
+/* Set the size of the div element that contains the map */
+#map {
+height: 30em;
+/* The height is 400 pixels */
+width:69%;
+/* The width is the width of the web page */
+float: right;
+}
+
+html{ 
+height: 100%;
+width: 100%;
+font-family:Arial;
+}
+
+body{
+background-color:#ffcc45;
+text-align: ; 
+position: relative; 
+}
+
+h3 {
+text-align: center;
+position: relative;
+padding:0.5%;
+}
+
+form {
+width: 100%;
+position: relative;
+clear: both;
+}
+
+table{
+table-layout: fixed;
+width: 100%;
+position: relative;
+padding-left: 10%;
+padding-right: 10%;
+padding-top:3%;
+}
+
+input[type=text] {
+background-color: #1e1210;
+color: white;
+width: 98%;
+font-size: 1em;
+padding: 1px;
+}
+
+input[type=text]:focus {
+  background-color: grey;
+}
+
+textarea {
+	
+}
+
+
+#click{
+float: left;
+padding-right: 5%;
+}
+
+#cheers {
+width: 25%;
+height: auto;
+top: 1px;
+left: 21px;
+float: left;
+position: absolute;
+}
+
+#footer{
+clear: both;
+text-align:center;
+background-color:#1e1210;
+border-top:1px solid;
+padding: 0.5em;
+color: white;
+padding:2%;
+border: 0;
+}
+
+h4{
+float: left;
+color: white;
+}
+
+a{
+float: right;
+}
+
+button {
+  background: none;
+  border-color: #ffcc45;
+  outline: none;
+}
+button:active {
+  border-style: outset;
+}

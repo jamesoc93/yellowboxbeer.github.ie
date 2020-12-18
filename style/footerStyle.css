@@ -1,0 +1,22 @@
+
+#footer{
+clear: both;
+text-align:center;
+background-color:#1e1210;
+border-top:1px solid;
+padding: 0.5em;
+color: white;
+padding:2%;
+border: 0;
+width: 100%;
+}
+
+#footer h4{
+float: left;
+color: white;
+}
+
+#footer a{
+float: right;
+padding: 2%;
+}

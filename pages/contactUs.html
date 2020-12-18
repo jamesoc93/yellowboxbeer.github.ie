@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	
+		   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <script
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly"
+			defer></script>
+			
+  <script src="../java/formContactUs.js" ></script>
+  
+  <link rel="stylesheet" href="../style/style.css">
+  
+  <title>Contact Us</title>
+
+</head>
+
+<body>
+
+	<div class="row" id="header">
+	<div class="col-sm-4"></div>
+		<nav class="col-sm-8">
+			<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="contactUs.html">Contact us</a></li>
+			<img src="../img/rect839.png" alt="YBB logo" id="logo">
+			<li><a href="shop.html">Shop</a></li>
+			<li><a href="Blog.html">Blog</a></li>
+			</ul>
+		</nav>
+	</div>
+	
+<!--contact us page written by Carlos Resin-->
+		<h3>Yellow Box Beer Location Map</h3>
+		<!--The div element for the map -->
+		<!-- The Google Maps HTML element was taken from:
+		https://developers.google.com/maps/documentation/javascript/adding-a-google-map website
+		shown on references, and small variation was added to suit the site framework plan. 
+		-->
+		<div id="map"></div>
+		<!--The div element for the beer art in the right side -->
+		<div id = "cheers" >
+		<img src="../img/yb_beer_cheers.png" alt="Cheers Yellow Box Beer">
+		</div>
+		<!--The form to be submited -->
+			<form action=" mailto:x17166306@student.ncirl.ie" onsubmit="return submitForm()" method="post">
+				<table border= "0" >
+					<tr>
+						<td>
+							<input id='fName' type = "text" value = "" placeholder="First Name*" />
+						</td>
+						<td>
+							<input id='lName' type = "text" value = "" placeholder="Last Name*" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input id='email' type = "text" value = "" placeholder="Email*" />	
+						</td>
+						<td>
+							<input type = "text" value = "" placeholder="Phone" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<br><p> <b> Service you are interested in:* </b> </p><br>
+							<input type = "radio" name = "radio" checked /> Become a partner<br>
+							<input type = "radio" name = "radio" /> Request a call back<br>
+							<input type = "radio" name = "radio" /> Complain<br>
+							<input type = "radio" name = "radio" /> Review<br>
+							<input type = "radio" name = "radio" /> Other<br>
+							<input type = "text" value = "" placeholder="Please specify" />
+						</td>
+						<td>
+							<br><p> <b> How did you hear about us? </b> </p> <br>
+							<input type = "checkbox" value = "Social media (Facebook, Instgram, etc.)" />Social media (Facebook, Instgram, etc.)<br>
+							<input type = "checkbox" value = "Media (TV, Radio, etc.)" />Media (TV, Radio, etc.)<br>
+							<input type = "checkbox" value = "Through a friend" />Through a friend<br>
+							<input type = "checkbox" value = "College or job network" />College or job network<br>
+							<input type = "checkbox" value = "Search engine (eg. Google)" />Search engine (eg. Google)<br>
+							<input type = "text" value = "" placeholder="Please specify" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<br><p> <b> Please include any comments here </b> </p>
+							<textarea rows = "13" cols = "80" > </textarea>
+						</td>
+						<td>
+							<div id = 'click'>
+							<input type = "image" src="../img/yb_beer_image.png" alt = "yellow box beer empty pint beer">
+							</div>
+							<div > 
+							<button type = "reset"> <img src="../img/yb_beer_empty.png" alt = "yellow box beer empty pint beer" /> </button>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</form>	
+<!--footer page written by Carlos Resin-->
+		<div id="footer">	
+				<!-- href should link to company's social media addresses when they exist-->
+				<a href="https://www.facebook.com" class="footer"><img src="../img/facebook_yellowboxbeer.png" alt="facebook logo"/></a>
+				<a href="https://www.instagram.com" class="footer"><img src="../img/instagram_yellowboxbeer.png" alt="instagram logo"/></a>			
+				<h4 class="footer"> ✆ +353 89 666 3333 </h4> <br> <br>
+				<h4 class="footer"> ✉ info@yellowboxbeer.com </h4>
+				<h5 class="footer">Copyright © Yellow Box Beer</h5>
+			</div>
+	</body>
+</html>
+		
+			
